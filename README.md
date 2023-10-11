@@ -8,7 +8,7 @@ Given a set of points find the **Lagrange Polynomial** that interpolates those p
 * The function should return the coefficients of lagrange polynomial. The coefficient of the lowest power of x should be the first element of list
 * Example
 
-  Given points = [[1, 3], [4, 4], [16, 5], [13, 9]], the returned value calculated on base field of 17 should be list - [1, 13, 3, 3]
+  Given points = [[1, 3], [4, 4], [16, 5], [13, 9]], the returned value calculated on base field of 17 should be list - [1, 13, 3, 3] (Representing the polynomial `3x^3 + 3x^2 + 13x + 1`).
 
 ## Evaluation
 
