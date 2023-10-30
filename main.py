@@ -1,4 +1,6 @@
 from csv_writer import CSVWriter
+from helpers.polynomial_helper import Polynomial
+from fields.field import FQ
 
 
 def calculate_lagrange_polynomial(points):
@@ -15,8 +17,11 @@ def calculate_lagrange_polynomial(points):
     should be the first element of list
     """
 
-    # Add your code here
-    pass
+    poly = Polynomial.from_points([
+        [FQ(point[0]), FQ(point[1])]
+        for point in points
+    ])
+    return [_.val for _ in poly.coeffs]
 
 
 csv_writer = CSVWriter()
